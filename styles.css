@@ -124,15 +124,26 @@ nav {
         position: absolute;
         left: 0px;
     }
-}
-
-.section1-image-desktop {
-    display: flex;
-    width: 540px;
-    height: 480px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    background: transparent;
+    .section1-image {
+        display: flex;
+        width: 540px;
+        height: 480px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: transparent;
+    }
+    .section2-first-image {
+        width: 255px;
+        height: 480px;
+        border-radius: 20px;
+    }
+    .section2-second-image {
+        width: 445px;
+        height: 480px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #D8D8D8;
+    }
 }
 
 .typemaster-text {
@@ -184,13 +195,6 @@ nav {
     margin-top: 12px;
 }
 
-.section2-first-image-desktop {
-    width: 255px;
-    height: 480px;
-    border-radius: 20px;
-    background-image: url('./assets/desktop/image-phone-and-keyboard.jpg');
-}
-
 .overlay {
     width: 255px;
     height: 480px;
@@ -200,14 +204,6 @@ nav {
     mix-blend-mode: multiply;
     z-index: 1;
     border-radius: 20px;
-}
-
-.section2-second-image-desktop {
-    width: 445px;
-    height: 480px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    background: #D8D8D8;
 }
 
 .mechanical-text {
@@ -386,10 +382,10 @@ b {
         margin-top: 10px;
     }
     .section-1-right {
-        margin-top: -260px;
+        margin-top: -250px;
         float: right;
         overflow: hidden;
-        margin-right: -285px;
+        margin-right: -235px;
     }
     .section-2 {
         display: block;
@@ -399,7 +395,8 @@ b {
         gap: 50px;
     }
     .section-2-left {
-        margin-left: 145px;
+        margin-left: 30px;
+        gap: 30px;
         flex-wrap: nowrap;
     }
     .section-2-right {
@@ -409,20 +406,29 @@ b {
         gap: 20px;
         align-items: center;
     }
-    .section1-image-tablet {
+    .section1-image {
         width: 478px;
-        height: 425px;
+        height: 325px;
         flex-shrink: 0;
         border-radius: 20px;
     }
-    .section2-first-image-tablet {
+    .section2-first-image {
         width: 214px;
         height: 320px;
         flex-shrink: 0;
         border-radius: 20px;
-        background: #F16718;
     }
-    .section2-second-image-tablet {
+    .overlay {
+        width: 214px;
+        height: 320px;
+        border-radius: 20px;
+        position: absolute;
+        background: #F16718;
+        mix-blend-mode: multiply;
+        z-index: 1;
+        border-radius: 20px;
+    }
+    .section2-second-image {
         width: 445px;
         height: 320px;
         flex-shrink: 0;
@@ -447,7 +453,7 @@ b {
     }
     .description-body2>.description {
         float: right;
-        margin-left: 220px;
+        margin-left: 250px;
         width: 398px;
     }
     .description {
@@ -460,7 +466,7 @@ b {
         line-height: 26px;
     }
     .section3-body {
-        width: 339px;
+        width: 300px;
         height: 289px;
         flex-shrink: 0;
     }
@@ -481,14 +487,19 @@ b {
     .section-3 {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 10px;
+        gap: 30px;
         margin-top: 60px;
         margin-bottom: 193px;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 0 0px;
     }
     footer {
         margin-bottom: 50px;
+    }
+    .description-body3 {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
     }
 }
 
@@ -589,7 +600,7 @@ b {
     }
     .section-1-right {
         margin-top: 20px;
-        margin-right: -50px;
+        margin-right: -20px;
         float: right;
     }
     .section-2 {
@@ -606,25 +617,39 @@ b {
     .section-2-right {
         width: 255px;
     }
-    .section1-image-mobile {
+    .section1-image {
         width: 372px;
-        height: 331px;
+        height: 281px;
         flex-shrink: 0;
         border-radius: 20px;
+        margin-right: -20px;
+        z-index: 1;
     }
-    .section2-first-image-mobile {
-        width: 129px;
+    .section2-first-image {
+        width: 179px;
         height: 193px;
         flex-shrink: 0;
         border-radius: 20px;
         background: #F16718;
+        background-size: cover;
     }
-    .section2-second-image-mobile {
+    .overlay {
+        width: 129px;
+        height: 193px;
+        border-radius: 20px;
+        position: absolute;
+        background: #F16718;
+        mix-blend-mode: multiply;
+        z-index: 1;
+        border-radius: 20px;
+    }
+    .section2-second-image {
         width: 220px;
         height: 193px;
         flex-shrink: 0;
         border-radius: 20px;
         background: #D8D8D8;
+        margin-left: 20px;
     }
     .mechanical-text {
         color: #162542;
