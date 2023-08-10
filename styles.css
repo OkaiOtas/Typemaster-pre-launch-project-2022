@@ -196,11 +196,10 @@ nav {
     height: 480px;
     border-radius: 20px;
     position: absolute;
-    background: rgba(241, 103, 24, 0.7);
-    overflow: hidden;
+    background: #F16718;
+    mix-blend-mode: multiply;
     z-index: 1;
     border-radius: 20px;
-    /* To match the image's border-radius */
 }
 
 .section2-second-image-desktop {
