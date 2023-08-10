@@ -48,13 +48,14 @@
         </div>
         <div class="section-1-right">
             <picture>
-                <!-- Image for desktop (default) -->
-                <source media="(min-width:768px)" class="section1-image-desktop" srcset="./assets/desktop/image-keyboard.jpg" />
-                <!-- Image for tablet -->
-                <source media="(min-width: 480px)" class="section1-image-tablet" srcset="./assets/tablet/image-keyboard.jpg" />
                 <!-- Image for mobile -->
-                <img class="section1-image-mobile" src="./assets/mobile/image-keyboard.jpg" alt="keyboard" />
+                <source media="(max-width: 479px)" class="section1-image-mobile" srcset="./assets/mobile/image-keyboard.jpg" />
+                <!-- Image for tablet -->
+                <source media="(min-width: 480px) and (max-width: 850px)" class="section1-image-tablet" srcset="./assets/tablet/image-keyboard.jpg" />
+                <!-- Image for desktop (default) -->
+                <img class="section1-image-desktop" src="./assets/desktop/image-keyboard.jpg" alt="keyboard" />
             </picture>
+
         </div>
         <div class="grey-container">
             <svg xmlns="http://www.w3.org/2000/svg" width="120" height="240" viewBox="0 0 120 240" fill="none">
@@ -72,25 +73,28 @@
         </div>
         <div class="section-2-left">
             <div>
+                <div class="overlay"></div>
                 <picture>
-                    <!-- Image for desktop (default) -->
-                    <source media="(min-width:768px)" class="section2-first-image-desktop" srcset="./assets/desktop/image-phone-and-keyboard.jpg" />
-                    <!-- Image for tablet -->
-                    <source media="(min-width: 480px)" class="section2-first-image-tablet" srcset="./assets/tablet/image-phone-and-keyboard.jpg" />
                     <!-- Image for mobile -->
-                    <img class="section2-first-image-mobile" src="./assets/mobile/image-phone-and-keyboard.jpg" alt="keyboard" />
+                    <source media="(max-width: 479px)" class="section2-first-image-mobile" srcset="./assets/mobile/image-phone-and-keyboard.jpg" />
+                    <!-- Image for tablet -->
+                    <source media="(min-width: 480px) and (max-width: 850px)" class="section2-first-image-tablet" srcset="./assets/tablet/image-phone-and-keyboard.jpg" />
+                    <!-- Image for desktop (default) -->
+                    <img class="section2-first-image-desktop" src="./assets/desktop/image-phone-and-keyboard.jpg" alt="keyboard" />
                 </picture>
+
             </div>
 
             <div>
                 <picture>
-                    <!-- Image for desktop (default) -->
-                    <source media="(min-width:768px)" class="section2-second-image-desktop" srcset="./assets/desktop/image-glass-and-keyboard.jpg" />
-                    <!-- Image for tablet -->
-                    <source media="(min-width: 480px)" class="section2-second-image-tablet" srcset="./assets/tablet/image-glass-and-keyboard.jpg" />
                     <!-- Image for mobile -->
-                    <img class="section2-second-image-mobile" src="./assets/mobile/image-glass-and-keyboard.jpg" alt="keyboard" />
+                    <source media="(max-width: 479px)" class="section2-second-image-mobile" srcset="./assets/mobile/image-glass-and-keyboard.jpg" />
+                    <!-- Image for tablet -->
+                    <source media="(min-width: 480px) and (max-width: 850px)" class="section2-second-image-tablet" srcset="./assets/tablet/image-glass-and-keyboard.jpg" />
+                    <!-- Image for desktop (default) -->
+                    <img class="section2-second-image-desktop" src="./assets/desktop/image-glass-and-keyboard.jpg" alt="keyboard" />
                 </picture>
+
             </div>
 
 
@@ -119,7 +123,8 @@
             </div>
             <div class="header-frame">
                 <p class="header">
-                    Highly compatible
+                    <span>Highly <br> compatible</span>
+
                 </p>
             </div>
             <div class="description-body3">

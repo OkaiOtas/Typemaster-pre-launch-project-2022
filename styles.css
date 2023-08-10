@@ -27,7 +27,7 @@ nav {
     margin-right: 165px;
 }
 
-@media (min-width:769px) {
+@media (min-width:851px) {
     .primary-button:hover {
         color: #FFF;
         font-family: Barlow;
@@ -38,6 +38,7 @@ nav {
         text-transform: uppercase;
         border-radius: 8px;
         background: #162542;
+        cursor: pointer;
     }
     .secondary-button:hover {
         border-radius: 8px;
@@ -49,6 +50,7 @@ nav {
         font-weight: 700;
         line-height: 26px;
         text-transform: uppercase;
+        cursor: pointer;
     }
 }
 
@@ -111,7 +113,7 @@ nav {
     display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 851px) {
     .grey-container {
         display: block;
         position: absolute;
@@ -125,25 +127,12 @@ nav {
 }
 
 .section1-image-desktop {
+    display: flex;
     width: 540px;
     height: 480px;
     flex-shrink: 0;
     border-radius: 20px;
     background: transparent;
-}
-
-.section1-image-tablet {
-    width: 478px;
-    height: 425px;
-    flex-shrink: 0;
-    border-radius: 20px;
-}
-
-.section1-image-mobile {
-    width: 372px;
-    height: 331px;
-    flex-shrink: 0;
-    border-radius: 20px;
 }
 
 .typemaster-text {
@@ -197,46 +186,26 @@ nav {
 
 .section2-first-image-desktop {
     width: 255px;
-    height: 960px;
+    height: 480px;
     border-radius: 20px;
-    background: #F16718;
+    background-image: url('./assets/desktop/image-phone-and-keyboard.jpg');
 }
 
-.section2-first-image-tablet {
-    width: 214px;
-    height: 320px;
-    flex-shrink: 0;
+.overlay {
+    width: 255px;
+    height: 480px;
     border-radius: 20px;
-    background: #F16718;
-}
-
-.section2-first-image-mobile {
-    width: 129px;
-    height: 193px;
-    flex-shrink: 0;
+    position: absolute;
+    background: rgba(241, 103, 24, 0.7);
+    overflow: hidden;
+    z-index: 1;
     border-radius: 20px;
-    background: #F16718;
+    /* To match the image's border-radius */
 }
 
 .section2-second-image-desktop {
     width: 445px;
     height: 480px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    background: #D8D8D8;
-}
-
-.section2-second-image-tablet {
-    width: 445px;
-    height: 320px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    background: #D8D8D8;
-}
-
-.section2-second-image-mobile {
-    width: 220px;
-    height: 193px;
     flex-shrink: 0;
     border-radius: 20px;
     background: #D8D8D8;
@@ -323,7 +292,7 @@ b {
 
 /* Tablet */
 
-@media (min-width: 600px) and (max-width: 850px) {
+@media (min-width: 481px) and (max-width: 850px) {
     html,
     body {
         overflow-x: hidden;
@@ -440,6 +409,26 @@ b {
         flex-wrap: nowrap;
         gap: 20px;
         align-items: center;
+    }
+    .section1-image-tablet {
+        width: 478px;
+        height: 425px;
+        flex-shrink: 0;
+        border-radius: 20px;
+    }
+    .section2-first-image-tablet {
+        width: 214px;
+        height: 320px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #F16718;
+    }
+    .section2-second-image-tablet {
+        width: 445px;
+        height: 320px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #D8D8D8;
     }
     .mechanical-text {
         width: 255px;
@@ -618,6 +607,26 @@ b {
     .section-2-right {
         width: 255px;
     }
+    .section1-image-mobile {
+        width: 372px;
+        height: 331px;
+        flex-shrink: 0;
+        border-radius: 20px;
+    }
+    .section2-first-image-mobile {
+        width: 129px;
+        height: 193px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #F16718;
+    }
+    .section2-second-image-mobile {
+        width: 220px;
+        height: 193px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #D8D8D8;
+    }
     .mechanical-text {
         color: #162542;
         text-align: center;
@@ -646,8 +655,17 @@ b {
     }
     .header-frame {
         text-align: center;
-        width: 150px;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 220px;
         display: flex;
+    }
+    .header {
+        display: flex;
+        margin-left: 0px;
+    }
+    .header>span {
+        margin-left: 50px;
     }
     .icon-container {
         text-align: center;
